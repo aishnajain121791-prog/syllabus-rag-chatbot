@@ -1,0 +1,192 @@
+[
+  {
+    "question": "What are the objectives of the Computer Organization (R17A0510) course?",
+    "answer": "To understand basic components of a system, explore memory organization, explore I/O organization in depth, and analyze hardware and software issues related to computers and their interface.",
+    "source": "COMPUTER ORGANIZATION (R17A0510).pdf",
+    "page": 2
+  },
+  {
+    "question": "What is a processor clock?",
+    "answer": "A processor clock is a timing signal that controls processor circuits by generating regular time intervals.",
+    "source": "COMPUTER ORGANIZATION (R17A0510).pdf",
+    "page": 15
+  },
+  {
+    "question": "What is a DMA controller and how does the CPU initialize it?",
+    "answer": "A DMA controller is an interface that allows I/O transfer directly between memory and a device while freeing the CPU for other tasks. The CPU initializes it by sending the memory address and block size (number of words).",
+    "source": "COMPUTER ORGANIZATION (R17A0510).pdf",
+    "page": 88
+  },
+  {
+    "question": "Who prepared the Digital Notes on Computer Organization and Architecture (R20A0411)?",
+    "answer": "Ms. D. Asha, Associate Professor in the Department of Electronics and Communications Engineering at Malla Reddy College of Engineering & Technology.",
+    "source": "COMPUTER ORGANIZATION AND ARCHITECTURE.pdf",
+    "page": 1
+  },
+  {
+    "question": "How many instruction bytes can the BIU prefetch and store in the queue register?",
+    "answer": "The BIU prefetches up to six instruction bytes following the present instruction from memory and stores them in the queue register.",
+    "source": "COMPUTER ORGANIZATION AND ARCHITECTURE.pdf",
+    "page": 35
+  },
+  {
+    "question": "What is cache memory and what property of computer programs makes it effective?",
+    "answer": "Cache memory is a small, very fast memory interposed between the processor and main memory to make main memory appear faster; its effectiveness is based on locality of reference.",
+    "source": "COMPUTER ORGANIZATION AND ARCHITECTURE.pdf",
+    "page": 58
+  },
+  {
+    "question": "What lines does the I/O bus consist of and what does each peripheral interface unit do?",
+    "answer": "The I/O bus consists of data lines, address lines, and control lines. Each interface unit decodes the address and control signals, interprets them for the peripheral, provides signals for the peripheral controller, and supervises data flow.",
+    "source": "COMPUTER ORGANIZATION AND ARCHITECTURE.pdf",
+    "page": 70
+  },
+  {
+    "question": "According to the index in Computer Organization Notes, which units cover Memory Organization and Pipelining and Vector Processing?",
+    "answer": "Unit IV covers Memory Organization (pages 58-65) and Unit V covers Input-Output Organization (pages 66-74) and Pipelining and Vector Processing (pages 74-78).",
+    "source": "COMPUTER ORGANIZATION NOTES.pdf",
+    "page": 4
+  },
+  {
+    "question": "What topics are included in the Unit 3 syllabus for Central Processing Unit organization and Control unit design?",
+    "answer": "CPU organization covers General Register Organization, Stack organization, Instruction formats, Addressing modes, Data Transfer and Manipulation, Program Control, and CISC/RISC processors; Control unit design covers Design approaches, Control memory, Address sequencing, micro program example, design of CU, and Micro Programmed Control.",
+    "source": "COMPUTER ORGANIZATION NOTES.pdf",
+    "page": 47
+  },
+  {
+    "question": "Why are input-output interface units needed between the CPU and peripherals?",
+    "answer": "Input-output interface units provide communication links between the processor bus and peripherals to manage and control information transfers between the internal system and input-output devices.",
+    "source": "COMPUTER ORGANIZATION NOTES.pdf",
+    "page": 71
+  },
+  {
+    "question": "How can a hardware circuit add 1 to an n-bit value without being tied to one dedicated register?",
+    "answer": "By connecting n half-adders in cascade to build an n-bit binary incrementer.",
+    "source": "COMPUTER ORGANIZATION (R17A0510).pdf",
+    "page": 25,
+    "answerable": true
+  },
+  {
+    "question": "Which addressing mechanism computes the target memory location as a signed offset from the next instruction's address?",
+    "answer": "Relative Address Mode, which adds the signed 2's complement address field of the instruction to the program counter.",
+    "source": "COMPUTER ORGANIZATION (R17A0510).pdf",
+    "page": 42,
+    "answerable": true
+  },
+  {
+    "question": "In the stack design where the first pushed item is placed at address 1, when is the FULL flag set to 1?",
+    "answer": "When the last item is stored at address 0 and the stack pointer SP reaches 0 (meaning the previous top item was at location 1).",
+    "source": "COMPUTER ORGANIZATION (R17A0510).pdf",
+    "page": 53,
+    "answerable": true
+  },
+  {
+    "question": "What is the main drawback of storing operands inside CPU registers when using register addressing?",
+    "answer": "The available address space is very limited, even though only a small address field is needed and no memory reference is required.",
+    "source": "COMPUTER ORGANIZATION (R17A0510).pdf",
+    "page": 62,
+    "answerable": true
+  },
+  {
+    "question": "With a 35-bit mantissa and an 11-bit exponent, roughly what maximum magnitude and decimal digit precision can the floating-point representation hold?",
+    "answer": "About 10^615 in magnitude and up to around 10^10 (10 decimal digits) for the 35-bit integer mantissa.",
+    "source": "COMPUTER ORGANIZATION (R17A0510).pdf",
+    "page": 75,
+    "answerable": true
+  },
+  {
+    "question": "Why are fixed-point number formats usually inadequate for scientific or numerical analysis?",
+    "answer": "They cover a relatively limited range of values, and numbers exceeding 32 bits must be stored inexactly.",
+    "source": "COMPUTER ORGANIZATION AND ARCHITECTURE.pdf",
+    "page": 15,
+    "answerable": true
+  },
+  {
+    "question": "Which category of instructions gives a computer decision-making power by modifying the address held in the program counter?",
+    "answer": "Program control instructions (such as branch and jump instructions).",
+    "source": "COMPUTER ORGANIZATION AND ARCHITECTURE.pdf",
+    "page": 46,
+    "answerable": true
+  },
+  {
+    "question": "In a memory chip's bit-cell grid, what drives the horizontal line shared by a word's cells and what links each column to I/O?",
+    "answer": "The address decoder drives the common word line for each row, while two bit lines connect each column of cells to a Sense/Write circuit.",
+    "source": "COMPUTER ORGANIZATION AND ARCHITECTURE.pdf",
+    "page": 64,
+    "answerable": true
+  },
+  {
+    "question": "How can a DMA controller move data across the bus without ever issuing a bus request to the CPU?",
+    "answer": "In transparent DMA transfer mode, the DMAC observes the processor, waits until the CPU enters an idle state, and takes control of the bus.",
+    "source": "COMPUTER ORGANIZATION AND ARCHITECTURE.pdf",
+    "page": 81,
+    "answerable": true
+  },
+  {
+    "question": "How many clock cycles are required by a k-segment pipeline with cycle time tp to complete n tasks?",
+    "answer": "k + (n - 1) clock cycles: k cycles for the first task plus one cycle for each of the remaining n - 1 tasks.",
+    "source": "COMPUTER ORGANIZATION AND ARCHITECTURE.pdf",
+    "page": 90,
+    "answerable": true
+  },
+  {
+    "question": "Which three system layers should be designed together to achieve the best program execution speed?",
+    "answer": "The compiler, the machine instruction set, and the hardware.",
+    "source": "COMPUTER ORGANIZATION NOTES.pdf",
+    "page": 13,
+    "answerable": true
+  },
+  {
+    "question": "How can you distinguish arithmetic addition from logical OR when reading the '+' operator in register transfer notation?",
+    "answer": "Inside a microoperation '+' denotes arithmetic summation, whereas inside a control function '+' denotes logical OR.",
+    "source": "COMPUTER ORGANIZATION NOTES.pdf",
+    "page": 26,
+    "answerable": true
+  },
+  {
+    "question": "What are the three major phases of an instruction cycle carried out by the control unit, and which register tracks the next instruction?",
+    "answer": "Fetch, Decode, and Execute; the Program Counter (PC) stores the address of the instruction to be executed next.",
+    "source": "COMPUTER ORGANIZATION NOTES.pdf",
+    "page": 37,
+    "answerable": true
+  },
+  {
+    "question": "In a two-address instruction architecture like the Pentium, what dual role does the destination operand field serve?",
+    "answer": "It specifies where the result is stored while also supplying one of the two source operands.",
+    "source": "COMPUTER ORGANIZATION NOTES.pdf",
+    "page": 53,
+    "answerable": true
+  },
+  {
+    "question": "How does post-indexing differ from pre-indexing when calculating an effective address with both indirection and an index register?",
+    "answer": "Post-indexing applies indexing after indirection (EA = (A) + (R)), while pre-indexing applies indexing before indirection (EA = (A + (R))).",
+    "source": "COMPUTER ORGANIZATION NOTES.pdf",
+    "page": 61,
+    "answerable": true
+  },
+  {
+    "question": "How does the Adam optimizer update neural network weights using first and second moment estimates?",
+    "answer": "Not in notes (Machine Learning topic outside Computer Organization).",
+    "answerable": false
+  },
+  {
+    "question": "What do the four ACID properties guarantee for database transactions?",
+    "answer": "Not in notes (DBMS topic outside Computer Organization).",
+    "answerable": false
+  },
+  {
+    "question": "How does Python's Global Interpreter Lock (GIL) affect CPU-bound multithreaded programs?",
+    "answer": "Not in notes (Python runtime topic outside Computer Organization).",
+    "answerable": false
+  },
+  {
+    "question": "What is the balanced chemical equation for photosynthesis in plants?",
+    "answer": "Not in notes (Biology topic outside Computer Organization).",
+    "answerable": false
+  },
+  {
+    "question": "How does TCP slow start dynamically adjust the congestion window size?",
+    "answer": "Not in notes (Computer Networks topic outside Computer Organization).",
+    "answerable": false
+  }
+]

@@ -1,0 +1,22 @@
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Vector index files
+*.faiss
+*.index
+*.pkl
+index/
+faiss_index/
+
+# SQLite database
+app.db
+/*.pdf
+data/
